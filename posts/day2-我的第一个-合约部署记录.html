@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Day2：我的第一个 合约部署记录</title>
+    <meta name="description" content="今天我完成了 Web3 Summer Internship 的第一个合约部署任务。" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="../index.html#top" aria-label="返回首页">
+        <span class="brand-mark">D</span>
+        <span>Dawnener</span>
+      </a>
+      <button class="menu-button" type="button" aria-label="打开导航" aria-expanded="false" data-menu-button>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" data-nav><a href="../index.html#about">关于我</a><a href="../posts.html" class="active">文章</a><a href="../index.html#projects">项目</a><a href="../index.html#contact">联系</a></nav>
+    </header>
+    <main>
+      <article class="article-shell section-shell">
+        <a class="back-link" href="../posts.html">← 返回文章列表</a>
+        <header class="article-hero">
+          <p class="eyebrow">Notion Sync / Dawnener's Blog</p>
+          <h1>Day2：我的第一个 合约部署记录</h1>
+          <div class="article-meta">
+            <time datetime="2026-07-07">2026-07-07</time>
+            <div class="tag-row"><span>Web3</span><span>Monad Testnet</span><span>学习记录</span></div>
+          </div>
+          <p>今天我完成了 Web3 Summer Internship 的第一个合约部署任务。</p>
+        </header>
+        <div class="article-content">
+          <h2>今天完成了什么</h2>
+<p>今天我完成了 Web3 Summer Internship 的第一个合约部署任务。</p>
+<p>我使用 Remix 编译了一个最小 Solidity 合约，并将它部署到了 Monad Testnet。部署完成后，我保存了合约地址和部署交易 hash，也完成了至少一次合约交互。</p>
+<h2>我学到了什么</h2>
+<p>这次任务让我第一次理解了智能合约部署的大致流程。</p>
+<p>合约部署到测试网之后，不会因为我关闭 Remix、钱包或浏览器页面而消失。只要部署成功，它就已经记录在链上，之后可以通过区块浏览器继续查询。</p>
+<h2>遇到的问题</h2>
+<ul><li>什么是交易 hash</li></ul>
+<h2>当前理解</h2>
+<p>合约地址可以理解为这个合约在区块链上的“位置”。</p>
+<p>交易 hash 可以理解为某一次操作的“记录编号”。</p>
+<p>read function 是读取链上数据，通常不需要花 gas。</p>
+<p>write function 是修改链上数据，通常需要钱包确认，并产生交易记录。</p>
+<p>接下来我需要整理 README，记录合约功能、部署过程、交互过程，以及区块浏览器查询链接。</p>
+<h2>我的部署记录</h2>
+<p>合约地址：0xd11c95A3a9E73Af3E5a23C940AdB366FEcdd085d</p>
+<p>部署交易 hash：0xb320a14294c004bf45bb7faa45697ec40f2564de7bcaf246f7228b4b8b13c423</p>
+<p>交互交易 hash：0xa521cd369ec0d38b0ac82f6ab51753db5e30cfbf59e04dd52b5c79afb48119f2</p>
+<p>区块浏览器链接：<a href="https://testnet.monadscan.com/tx/0xb320a14294c004bf45bb7faa45697ec40f2564de7bcaf246f7228b4b8b13c423" target="_blank" rel="noreferrer">Monad Transaction Hash: 0xb320a14294... | MonadScan Testnet</a></p>
+<label class="task-item"><input type="checkbox" disabled checked /> <span>合约功能说明</span></label>
+<label class="task-item"><input type="checkbox" disabled checked /> <span>部署过程说明</span></label>
+<label class="task-item"><input type="checkbox" disabled checked /> <span>read function 交互记录</span></label>
+<label class="task-item"><input type="checkbox" disabled checked /> <span>write function 交互记录</span></label>
+<label class="task-item"><input type="checkbox" disabled checked /> <span>区块浏览器截图或链接</span></label>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <span>© <span data-year></span> Dawnener</span>
+      <a href="../index.html#top">Back to top</a>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
