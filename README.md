@@ -2,4 +2,4 @@
 
 Static GitHub Pages build for Dawnener's personal blog.
 
-Do not upload local Notion sync secrets such as `.env`.
+This repository contains only public website files. Notion sync secrets stay local.
