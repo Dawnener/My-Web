@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Day8：方向选择与Dev plan和策划案完成</title>
+    <meta name="description" content="这则Blog将直接记录这三份今天完成的任务，从下面开始" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="../index.html#top" aria-label="返回首页">
+        <span class="brand-mark">D</span>
+        <span>Dawnener</span>
+      </a>
+      <button class="menu-button" type="button" aria-label="打开导航" aria-expanded="false" data-menu-button>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" data-nav><a href="../index.html#about">关于我</a><a href="../posts.html" class="active">文章</a><a href="../index.html#projects">项目</a><a href="../index.html#contact">联系</a></nav>
+    </header>
+    <main>
+      <article class="article-shell section-shell">
+        <a class="back-link" href="../posts.html">← 返回文章列表</a>
+        <header class="article-hero">
+          <p class="eyebrow">Notion Sync / Dawnener's Blog</p>
+          <h1>Day8：方向选择与Dev plan和策划案完成</h1>
+          <div class="article-meta">
+            <time datetime="2026-07-13">2026-07-13</time>
+            <div class="tag-row"><span>Web3</span><span>学习记录</span></div>
+          </div>
+          <p>这则Blog将直接记录这三份今天完成的任务，从下面开始</p>
+        </header>
+        <div class="article-content">
+          <p>这则Blog将直接记录这三份今天完成的任务，从下面开始</p>
+<h2>方向选择：</h2>
+<p>我会选择以运营为主，辅以技术的方向，主要是为了在活动的推广中清晰明白自己推广的事物原理与构建逻辑，以防止在一无所知的情况下就进行建设。主要就意图服务于在运营的同时可以解答部分详细的技术问题。本周最小产出目标定为在技术方面整合好上周所做的留言板全功能，添加后端部分并优化整体设计。在Week3中我可以尝试担当项目宣传和一部分的技术参与，帮助完成项目。</p>
+<h2><strong>AI-assisted Dev Plan（Tec）：</strong></h2>
+<p>我准备制作一个最小的 Monad 链上留言板。用户连接 钱包 后，可以读取当前链上留言，并通过一笔交易更新留言。留言不会保存在普通数据库或本地缓存中，而是写入 Monad Testnet 智能合约。如果我拥有更充足的时间，我会考虑将它升级为一个聊天室而不只是留言板。</p>
+<p>这个Dapp主要面向第一次体验 Web3 DApp 的新手，以及希望了解 Monad 链上 read / write 流程的营员和开发者。用户需要完成的包括连接钱包，输入一句留言，点击更新按钮，在钱包中确认交易，等待交易完成后看到新的链上留言。如果后续改为聊天室，用户可以完成还有自定义个人的展示信息。</p>
+<p>本周可以尝试真实实现</p>
+<ul><li>编写Solidity 合约</li><li>编译和测试合约</li><li>部署到 Monad Testnet</li><li>前端连接 MetaMask</li><li>读取当前链上留言</li><li>更新链上留言</li><li>等待交易确认</li><li>显示交易 Hash</li><li>在 Explorer 中验证合约和交易</li><li>多用户资料</li><li>头像和昵称</li><li>多条留言历史</li><li>点赞、评论、关注</li></ul>
+<p>我会提供</p>
+<ul><li>合约地址</li><li>部署交易 Hash</li><li>留言更新交易 Hash</li><li>Monad Explorer 查询截图</li><li>前端运行截图</li><li>更新前后留言变化截图</li></ul>
+<p>来证明完成了这些内容。</p>
+<h2>策划案（Ops）：</h2>
+<h2>活动主题</h2>
+<p><strong>Web3 不只是炒币：普通互联网用户的第一堂 Web3 入门课</strong></p>
+<p>本活动计划采用线上 Space 或 AMA 的形式，规模控制在 30–100 人。内容面向没有系统接触过区块链和 Web3 的普通互联网用户，以浅显的方式介绍 Web3 的基本概念、实际使用场景和安全注意事项。</p>
+<p>本次活动希望帮助参与者建立一个相对准确的 Web3 初步认知，而不是单纯宣传代币或投资机会。在活动结束后，希望参与者能够理解</p>
+<ul><li>区分 Web3、区块链和炒币；</li><li>理解钱包、地址、智能合约和区块浏览器的基本作用；</li><li>知道普通互联网产品与链上产品的主要区别；</li><li>了解 Web3 中内容、社区、研究、产品和技术等不同参与方向；</li><li>掌握最基础的安全原则，例如不泄露助记词和私钥。</li></ul>
+<p>主要会尝试面向对 Web3 有兴趣，但不知道从哪里开始的普通互联网用户；学生、内容创作者、社区运营和互联网产品从业者；想进入 Web3 学习或实习，但没有编程基础的新人；认为Web3 只是炒币、诈骗或高门槛技术等人群。尝试解决Web3 是否等于炒币？钱包、地址和智能合约到底是什么？普通人能以什么方式参与？怎样安全地完成第一次体验？四个核心问题</p>
+<p>因为Web3 的传播经常被投资、币价和技术术语主导，同时新人了解该行业面临的信息风险较高，而小型线上活动可以增强双方互动，适合新人提问形成有效交流氛围，故因此值得开展。</p>
+<p>参考案例可以为以太坊之夏等</p>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <span>© <span data-year></span> Dawnener</span>
+      <a href="../index.html#top">Back to top</a>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Day14：Week2结束</title>
+    <meta name="description" content="我没有直接相信 AI 的所有输出，而是重点核查了：" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="../index.html#top" aria-label="返回首页">
+        <span class="brand-mark">D</span>
+        <span>Dawnener</span>
+      </a>
+      <button class="menu-button" type="button" aria-label="打开导航" aria-expanded="false" data-menu-button>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" data-nav><a href="../index.html#about">关于我</a><a href="../posts.html" class="active">文章</a><a href="../index.html#projects">项目</a><a href="../index.html#contact">联系</a></nav>
+    </header>
+    <main>
+      <article class="article-shell section-shell">
+        <a class="back-link" href="../posts.html">← 返回文章列表</a>
+        <header class="article-hero">
+          <p class="eyebrow">Notion Sync / Dawnener's Blog</p>
+          <h1>Day14：Week2结束</h1>
+          <div class="article-meta">
+            <time datetime="2026-07-19">2026-07-19</time>
+            <div class="tag-row"><span>Web3</span><span>学习记录</span><span>Ai</span><span>Learning</span></div>
+          </div>
+          <p>我没有直接相信 AI 的所有输出，而是重点核查了：</p>
+        </header>
+        <div class="article-content">
+          <h2>AI 帮助了什么</h2>
+<ol><li>将课程任务拆解成可以执行的步骤，解释钱包、Explorer、Gas、智能合约、read/write function 和交易 Hash 等概念</li><li>辅助生成并检查最小 Solidity 打卡合约</li><li>在部署过程中帮助定位网络选择、测试币余额和 Remix 连接错误</li><li>阅读 Moss 仓库的 README、Docs、Example、Issue 和 PR，检查是否存在重复贡献</li><li>对照真实源代码，整理工作流程</li><li>起草并检查 <code>examples/simple-flow/README.md</code>，补充英文和中文 README 的入口链接</li><li>协助运行构建、类型检查、Lint、测试以及两个 Monad 主网模拟示例</li><li>翻译维护者的审核意见，并按照反馈将文档从长篇教程精简为紧贴可运行代码的本地说明</li></ol>
+<h2>我人工核查和判断了什么</h2>
+<p>我没有直接相信 AI 的所有输出，而是重点核查了：</p>
+<ul><li>课程专用钱包是否连接到正确的 Monad Testnet</li><li>合约地址、部署交易 Hash 和交互交易 Hash 是否对应正确记录</li><li>是否存在私钥、助记词或其他不能公开的信息</li><li>Moss 文档中的命令、文件路径和链接是否真实存在</li><li>PR 是否与其他贡献重复</li><li>文档是否准确反映当前项目架构</li><li>维护者提出的修改是否全部落实</li><li>对外说明中是否清楚区分“已提交”“待审核”和“已合并”</li></ul>
+<p>维护者指出初版 README 与 Getting Started 内容重复后，我接受了“示例旁只保留运行所需信息”的判断，保留环境要求、两条命令、流程图、安全边界和源码链接，删除重复的 API 教程与详细 Kuru walkthrough</p>
+<h2>哪些事情不能交给 AI</h2>
+<ul><li>钱包私钥、助记词、账号密码和 GitHub 登录权限</li><li>是否签名或发送链上交易</li><li>是否代表我公开提交 Issue、PR 或评论</li><li>对个人能力和 Week 3 角色的最终判断</li><li>对事实真实性和最终提交内容负责</li></ul>
+<p>AI 可以辅助阅读、生成初稿、检查和执行测试，但最终的授权、安全判断、事实确认和发布责任必须由我承担</p>
+<h2>协作结果</h2>
+<ul><li>完成 Monad Testnet 最小合约部署和 read/write 交互</li><li>提出 Moss Developer Experience Issue #39</li><li>针对 Issue #55 提交 PR #58</li><li>根据维护者反馈完成第二轮文档修改</li><li>PR 当前保持 Open、无合并冲突并等待维护者审核</li></ul>
+<h2>Week 2 Ops </h2>
+<h2>一、活动主题</h2>
+<p>本周策划的活动是：Web3 入门讲谈：从钱包到第一次链上交互</p>
+<p>活动面向对 Web3 感兴趣、但缺少区块链基础知识的学生和 Web2 背景学习者。这类新人经常不是缺少学习资料，而是面对钱包、Gas、Explorer、测试网、智能合约等大量术语时，不知道应该从哪里开始，也容易把 Web3 简单理解成炒币。因此，本次讲谈的目标不是一次讲完所有技术，而是帮助参与者建立一张可以继续学习的基础地图。</p>
+<h2>二、活动内容设计</h2>
+<p>讲谈计划按照以下顺序展开：</p>
+<h3>1. Web3 与普通互联网的区别</h3>
+<p>从账号、数据、资产控制和平台服务器几个角度，解释 Web2 与链上产品的区别。</p>
+<h3>2. 钱包不是“存币软件”</h3>
+<p>解释钱包地址、私钥、助记词和钱包密码的区别，并强调课程专用钱包和主钱包隔离。</p>
+<h3>3. 什么是链上记录</h3>
+<p>通过 Explorer 展示钱包地址、交易 Hash、合约地址和交易状态，让参与者理解“链上可验证”是什么意思。</p>
+<h3>4. 智能合约如何运行</h3>
+<p>使用最小 CheckIn 合约说明：</p>
+<pre><code class="language-plain text">用户钱包确认
+→ 调用智能合约
+→ 合约修改链上状态
+→ Explorer 查询结果</code></pre>
+<h3>5. 第一次安全的链上实践</h3>
+<p>建议参与者只使用测试网和课程专用钱包，完成：</p>
+<ul><li>添加测试网络；</li><li>领取测试币；</li><li>查询钱包地址；</li><li>完成一次合约交互；</li><li>保存交易 Hash。</li></ul>
+<h3>6. 安全与答疑</h3>
+<p>重点提醒：</p>
+<ul><li>不输入助记词或私钥</li><li>不盲目连接主钱包</li><li>不把签名和交易确认当成同一件事</li><li>不因空投或收益承诺忽略安全风险</li></ul>
+<h2>三、本周完成的主要成果</h2>
+<p>本周完成的是一套可执行的讲谈策划，而不是虚构一场已经举办的活动。成果包括：</p>
+<ol><li>明确目标用户和新人痛点；</li><li>完成讲谈主题与内容结构；</li><li>设计从概念到实操的学习路径；</li><li>整理钱包和私钥安全提醒；</li><li>设计 Explorer、交易 Hash 和智能合约演示内容；</li><li>准备新人互动问题和课后行动任务；</li><li>通过自己的 Monad 合约部署经历验证讲谈流程；</li><li>整理 AI 协作与人工核查记录。</li></ol>
+<h2>四、最重要的运营判断</h2>
+<p>本次策划最重要的判断是：</p>
+<blockquote>Web3 新人教育不应该从复杂技术或市场收益开始，而应该从真实使用场景和安全边界开始。</blockquote>
+<p>如果一开始介绍共识机制、并行执行、复杂 DeFi 或大量行业术语，新人可能记住很多词，却仍然不知道钱包弹窗在确认什么。</p>
+<p>因此，我采用了以下路径：</p>
+<pre><code class="language-plain text">生活化问题
+→ 基础概念
+→ 真实页面演示
+→ 测试网实践
+→ 安全提醒
+→ 继续学习入口</code></pre>
+<p>讲谈不追求信息量最大，而是希望参与者结束后能够做到：</p>
+<ul><li>听懂常见 Web3 术语；</li><li>区分地址、交易 Hash 和私钥；</li><li>知道 Explorer 的用途；</li><li>理解一次链上交互的大致过程；</li><li>在不接触真实资产的情况下继续实践。</li></ul>
+<h2>五、AI 如何协助</h2>
+<p>AI 帮助我整理新人常见问题、设计内容顺序、将术语转化成通俗语言、起草活动提纲，并检查安全提醒是否完整。</p>
+<p>我根据自己的真实学习过程进行了修改：</p>
+<ul><li>增加 Explorer 和交易 Hash 的解释；</li><li>强化课程专用钱包的必要性；</li><li>删除过于抽象的底层技术；</li><li>避免炒币和收益导向；</li><li>使用自己完成的 CheckIn 合约作为演示案例；</li><li>确保不会引导参与者公开私钥或助记词。</li></ul>
+<h2>六、Week 3 希望承担的运营角色</h2>
+<p>进入 Week 3 后，我的主要方向会转向 Tech，但仍可以承担技术内容与新人教育相关的 Ops 角色，包括：</p>
+<ul><li>将 Demo 转化成用户能理解的介绍；</li><li>编写新手教程和操作说明；</li><li>收集体验反馈；</li><li>组织测试和答疑；</li><li>记录项目进度与 Proof of Work；</li><li>帮助技术成员发现新人使用时的理解障碍。</li></ul>
+<p>这次策划让我认识到，技术运营的价值不是简单宣传产品，而是在技术实现和真实用户之间建立一条可以理解、可以操作、也足够安全的路径。</p>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <span>© <span data-year></span> Dawnener</span>
+      <a href="../index.html#top">Back to top</a>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

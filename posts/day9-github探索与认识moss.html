@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Day9：Github探索与认识Moss</title>
+    <meta name="description" content="今天将完成Github的认知学习，并阅读Moss项目的相关信息。这同时也是本周Week2Task的一部分。" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="../index.html#top" aria-label="返回首页">
+        <span class="brand-mark">D</span>
+        <span>Dawnener</span>
+      </a>
+      <button class="menu-button" type="button" aria-label="打开导航" aria-expanded="false" data-menu-button>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" data-nav><a href="../index.html#about">关于我</a><a href="../posts.html" class="active">文章</a><a href="../index.html#projects">项目</a><a href="../index.html#contact">联系</a></nav>
+    </header>
+    <main>
+      <article class="article-shell section-shell">
+        <a class="back-link" href="../posts.html">← 返回文章列表</a>
+        <header class="article-hero">
+          <p class="eyebrow">Notion Sync / Dawnener's Blog</p>
+          <h1>Day9：Github探索与认识Moss</h1>
+          <div class="article-meta">
+            <time datetime="2026-07-14">2026-07-14</time>
+            <div class="tag-row"><span>Web3</span><span>Monad Testnet</span><span>学习记录</span><span>Ai</span></div>
+          </div>
+          <p>今天将完成Github的认知学习，并阅读Moss项目的相关信息。这同时也是本周Week2Task的一部分。</p>
+        </header>
+        <div class="article-content">
+          <h2>今日目标：</h2>
+<p>今天将完成Github的认知学习，并阅读Moss项目的相关信息。这同时也是本周Week2Task的一部分。</p>
+<p>今日将按照task指使阅读Moss的Raed Me部分，并查看Issues和PR，尝试为项目建设做出贡献。</p>
+<h2>Moss认识：</h2>
+<p>Moss在其Read Me中介绍了其项目：将 <a href="https://monad.xyz/" target="_blank" rel="noreferrer">Monad</a> 上复杂的 DApp/协议交互抽象为 Agent 可调用的统一能力，并由系统而不是 Agent 负责组装正确的交易。概括来讲，这是一个让ai可以完成链上操作打包，最后再交由用户进行签名授权的ai相关项目，目的是让ai再不接触用户钱包隐私的同时准备链上交易。其可以用于让用户直接调用ai寻找能够完成用户意图的协议，再读取参数和风险说明，生成未签名交易计划，并在真实链上状态中模拟检查资产变化。例如用户需要进行货币兑换，可以直接让ai寻找合约并生成交易和检查，最终由用户决定是否签名。</p>
+<h2>Github探索：</h2>
+<p>阅读完read me后，我去到了docs部分。里面的是与MOSS相关的大量文档</p>
+<figure><img src="https://prod-files-secure-apne1.s3.ap-northeast-1.amazonaws.com/32da6b21-38a9-81a8-b584-0003b9add225/faecd0c5-22c5-4714-8cab-14869c0d9855/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466S5NNAE6L%2F20260720%2Fap-northeast-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20260720T124342Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjENz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMoIOuHs7NeUI4XNorYsoU0fWF9vZ7zs%2FShdLCz%2Fd3pfAiAJTzHsvy7li7QTBmtT3HSRCsJCo3WOGeZl5gnqSfMoZCqPBAim%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMyEWUvqn4WTDclKwmKuMDc5%2FG%2FnG5Kqu%2FiPD7d1lPE23EgB6wVkeHMl%2BR7sJ0zVP1GiLvqmVIeQuZuhT%2Flj1QOaVAcpba4MBErxY7UKp1GAoICB41%2FFJCa7sU7gIxz72qzw9QBEpoeCwSoj0kIU2wNfx%2BRYSCgNtYPOZZGP6%2FfC3bD2rIJoghJsQyNWjawN6Onf3F5ipXMIxyjT%2FQR16awqMuKPvQYhEWT2KqoKTsGSmjY7qtYS8LcuJeH6lMHboBuGD%2BygCao6zbwkbuLosCAu1pITbvIQK2ucOt1gBNXzDCkOV8V1qSE7EQfBocE%2BuQj%2BT9ECkmGlmLJ7u8DVKS%2FBlgyI2Z4Ys%2FQVXIDLSnJL2FrywALYDQy63NpWnTorgKTU%2F9JuBH%2FiPVUeO9WMGLKgYuZTisZsNtgpfu%2F2%2FdsakAwMdKgUfsF7GV8cVvCRiirx5E6F38KVPNQmSjJqc7RYy7AmAHqjbPvd%2BqBGYfz3XxRCTZjt3cB33wpRS%2F8uLohrQlxS1JB%2B0audv6glB93VFd%2FFWGwjMbwv8e1TiJqjY6Fk5Kcb3tvS7UQl6pq1G08RDTTqFHEYS6ST4ZvDquMLG%2BvA0kk5MmCzfG2oZDpHLdxTxLawWtq8ezasUliXSdGjLczZ6izz5He6%2F1lGKI9iYDMKqr%2BNIGOqUBetqnJ0ZTyCVOCSPaZyAmWuRLGR4gXh3ihEwiFwCqjVZpFQeHKy4PKLHGt1%2FZpDooCAer%2BJhy2fUhVFj0cqOdmiHsyViowLQTFWwRV5uAXZ1lOSU1o5y4js32f1JUH6x%2B4fRwFZ71S0fYDww4En8cQaimrezm8pqKIkhBhFe218Zvj19U82WkiVrQuY5%2FwRrzOtSwLRmtWLzg2syP5W12Vi5nkWob&amp;X-Amz-Signature=34a909e56498978330ba6876c20d8a6903e72d05b60022026eeb87bd0bef2696&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" /><figcaption></figcaption></figure>
+<p>详细明确的说明了Moss的设计意图和使用方法，并给出了Agent Skills。</p>
+<p>随后我去打开了Issues部分</p>
+<figure><img src="https://prod-files-secure-apne1.s3.ap-northeast-1.amazonaws.com/32da6b21-38a9-81a8-b584-0003b9add225/45e2cc91-4d04-41b5-87b8-ca82ea8c4661/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466S5NNAE6L%2F20260720%2Fap-northeast-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20260720T124342Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjENz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMoIOuHs7NeUI4XNorYsoU0fWF9vZ7zs%2FShdLCz%2Fd3pfAiAJTzHsvy7li7QTBmtT3HSRCsJCo3WOGeZl5gnqSfMoZCqPBAim%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMyEWUvqn4WTDclKwmKuMDc5%2FG%2FnG5Kqu%2FiPD7d1lPE23EgB6wVkeHMl%2BR7sJ0zVP1GiLvqmVIeQuZuhT%2Flj1QOaVAcpba4MBErxY7UKp1GAoICB41%2FFJCa7sU7gIxz72qzw9QBEpoeCwSoj0kIU2wNfx%2BRYSCgNtYPOZZGP6%2FfC3bD2rIJoghJsQyNWjawN6Onf3F5ipXMIxyjT%2FQR16awqMuKPvQYhEWT2KqoKTsGSmjY7qtYS8LcuJeH6lMHboBuGD%2BygCao6zbwkbuLosCAu1pITbvIQK2ucOt1gBNXzDCkOV8V1qSE7EQfBocE%2BuQj%2BT9ECkmGlmLJ7u8DVKS%2FBlgyI2Z4Ys%2FQVXIDLSnJL2FrywALYDQy63NpWnTorgKTU%2F9JuBH%2FiPVUeO9WMGLKgYuZTisZsNtgpfu%2F2%2FdsakAwMdKgUfsF7GV8cVvCRiirx5E6F38KVPNQmSjJqc7RYy7AmAHqjbPvd%2BqBGYfz3XxRCTZjt3cB33wpRS%2F8uLohrQlxS1JB%2B0audv6glB93VFd%2FFWGwjMbwv8e1TiJqjY6Fk5Kcb3tvS7UQl6pq1G08RDTTqFHEYS6ST4ZvDquMLG%2BvA0kk5MmCzfG2oZDpHLdxTxLawWtq8ezasUliXSdGjLczZ6izz5He6%2F1lGKI9iYDMKqr%2BNIGOqUBetqnJ0ZTyCVOCSPaZyAmWuRLGR4gXh3ihEwiFwCqjVZpFQeHKy4PKLHGt1%2FZpDooCAer%2BJhy2fUhVFj0cqOdmiHsyViowLQTFWwRV5uAXZ1lOSU1o5y4js32f1JUH6x%2B4fRwFZ71S0fYDww4En8cQaimrezm8pqKIkhBhFe218Zvj19U82WkiVrQuY5%2FwRrzOtSwLRmtWLzg2syP5W12Vi5nkWob&amp;X-Amz-Signature=593473cf4649ef3d8bfe2e5634b987d0753e0bc5d058d34a491919a4a29c50f0&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" /><figcaption></figcaption></figure>
+<p>这里列出了当前Moss遇到的部分问题和需要完善的部分，我会在之后选择我能够完成和感兴趣的相关Issue进行相关作业。</p>
+<p>随后我去阅读了一篇PR
+
+</p>
+<figure><img src="https://prod-files-secure-apne1.s3.ap-northeast-1.amazonaws.com/32da6b21-38a9-81a8-b584-0003b9add225/6b0de22d-32e0-4aba-ab58-e6d878efebf4/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466S5NNAE6L%2F20260720%2Fap-northeast-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20260720T124342Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjENz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMoIOuHs7NeUI4XNorYsoU0fWF9vZ7zs%2FShdLCz%2Fd3pfAiAJTzHsvy7li7QTBmtT3HSRCsJCo3WOGeZl5gnqSfMoZCqPBAim%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMyEWUvqn4WTDclKwmKuMDc5%2FG%2FnG5Kqu%2FiPD7d1lPE23EgB6wVkeHMl%2BR7sJ0zVP1GiLvqmVIeQuZuhT%2Flj1QOaVAcpba4MBErxY7UKp1GAoICB41%2FFJCa7sU7gIxz72qzw9QBEpoeCwSoj0kIU2wNfx%2BRYSCgNtYPOZZGP6%2FfC3bD2rIJoghJsQyNWjawN6Onf3F5ipXMIxyjT%2FQR16awqMuKPvQYhEWT2KqoKTsGSmjY7qtYS8LcuJeH6lMHboBuGD%2BygCao6zbwkbuLosCAu1pITbvIQK2ucOt1gBNXzDCkOV8V1qSE7EQfBocE%2BuQj%2BT9ECkmGlmLJ7u8DVKS%2FBlgyI2Z4Ys%2FQVXIDLSnJL2FrywALYDQy63NpWnTorgKTU%2F9JuBH%2FiPVUeO9WMGLKgYuZTisZsNtgpfu%2F2%2FdsakAwMdKgUfsF7GV8cVvCRiirx5E6F38KVPNQmSjJqc7RYy7AmAHqjbPvd%2BqBGYfz3XxRCTZjt3cB33wpRS%2F8uLohrQlxS1JB%2B0audv6glB93VFd%2FFWGwjMbwv8e1TiJqjY6Fk5Kcb3tvS7UQl6pq1G08RDTTqFHEYS6ST4ZvDquMLG%2BvA0kk5MmCzfG2oZDpHLdxTxLawWtq8ezasUliXSdGjLczZ6izz5He6%2F1lGKI9iYDMKqr%2BNIGOqUBetqnJ0ZTyCVOCSPaZyAmWuRLGR4gXh3ihEwiFwCqjVZpFQeHKy4PKLHGt1%2FZpDooCAer%2BJhy2fUhVFj0cqOdmiHsyViowLQTFWwRV5uAXZ1lOSU1o5y4js32f1JUH6x%2B4fRwFZ71S0fYDww4En8cQaimrezm8pqKIkhBhFe218Zvj19U82WkiVrQuY5%2FwRrzOtSwLRmtWLzg2syP5W12Vi5nkWob&amp;X-Amz-Signature=34d718a01ef939c31dc09b520a34047da247cca449683176a9c46a52f14fae29&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" /><figcaption></figcaption></figure>
+<p>PR 页面展示了该贡献者的修改说明与相关讨论记录、提交记录、修改文件和自动测试结果</p>
+<p>以上是我阅读当前Moss所收获到的经验与事物，下一步我将阅读具体Issue并提交相关PR</p>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <span>© <span data-year></span> Dawnener</span>
+      <a href="../index.html#top">Back to top</a>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
