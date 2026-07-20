@@ -517,6 +517,19 @@ h3 {
   color: #1683bd;
 }
 
+.project-link {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 18px;
+  color: #1677aa;
+  font-weight: 800;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .journey {
   border-top: 1px solid var(--line);
   background: rgba(233, 248, 255, 0.36);
