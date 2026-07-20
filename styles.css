@@ -285,6 +285,15 @@ h3 {
   overflow: hidden;
 }
 
+.hero-character {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
 .hero-visual::before {
   position: absolute;
   inset: auto -20% -24% -10%;
@@ -293,8 +302,16 @@ h3 {
   content: "";
 }
 
+.hero-visual::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(237, 249, 255, 0.42), rgba(255, 255, 255, 0.06));
+  content: "";
+}
+
 .visual-card {
   position: absolute;
+  z-index: 1;
   border: 1px solid rgba(56, 168, 232, 0.16);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.9);
@@ -717,6 +734,10 @@ h3 {
     min-height: 460px;
   }
 
+  .project-page-hero {
+    min-height: 390px;
+  }
+
   .about-grid,
   .post-list,
   .project-grid,
@@ -771,6 +792,26 @@ h3 {
   .hero-visual {
     min-height: auto;
     padding: 18px;
+  }
+
+  .hero-character {
+    object-position: center 20%;
+  }
+
+  .project-page-hero {
+    min-height: 360px;
+  }
+
+  .project-page-hero > img {
+    object-position: 60% center;
+  }
+
+  .project-page-hero .section-shell {
+    padding: 88px 0 48px;
+  }
+
+  .project-index {
+    padding: 64px 0 78px;
   }
 
   .visual-card,
@@ -864,6 +905,59 @@ h3 {
   font-size: 1.08rem;
   line-height: 1.8;
   margin-bottom: 34px;
+}
+
+.project-page-hero {
+  position: relative;
+  display: grid;
+  align-items: end;
+  min-height: 430px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  background: #17202b;
+}
+
+.project-page-hero > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.project-page-hero::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(11, 22, 33, 0.88) 0%, rgba(11, 22, 33, 0.62) 42%, rgba(11, 22, 33, 0.12) 100%);
+  content: "";
+}
+
+.project-page-hero .section-shell {
+  position: relative;
+  z-index: 1;
+  padding: 92px 0 64px;
+}
+
+.project-page-hero .eyebrow {
+  color: #a8e2ff;
+}
+
+.project-page-hero h1 {
+  max-width: 12ch;
+  color: #ffffff;
+}
+
+.project-page-hero p:not(.eyebrow) {
+  max-width: 60ch;
+  margin: 20px 0 0;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.project-index {
+  padding: 78px 0 96px;
 }
 
 .post-list.expanded {
